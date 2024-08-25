@@ -1,6 +1,7 @@
+import React from 'react';
 import { StyleSheet } from 'react-native';
-
 import EditScreenInfo from '@/components/EditScreenInfo';
+import NewComponent from '@/components/NewComponent'; // Import the new component
 import { Text, View } from '@/components/Themed';
 
 export default function TabOneScreen() {
@@ -9,6 +10,7 @@ export default function TabOneScreen() {
       <Text style={styles.title}>Tab One</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="app/(tabs)/index.tsx" />
+      <NewComponent /> {/* Include the new component */}
     </View>
   );
 }
